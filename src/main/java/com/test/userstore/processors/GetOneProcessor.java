@@ -1,6 +1,5 @@
 package com.test.userstore.processors;
 
-import com.test.userstore.exceptions.ValidationException;
 import com.test.userstore.service.UserObjectMapper;
 
 import java.io.IOException;

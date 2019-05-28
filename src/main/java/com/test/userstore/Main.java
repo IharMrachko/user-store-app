@@ -25,8 +25,6 @@ public class Main {
                 isOpen = false;
             }
         }
-
         scanner.close();
     }
-
 }

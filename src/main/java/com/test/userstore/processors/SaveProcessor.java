@@ -12,7 +12,6 @@ import java.util.UUID;
 
 public final class SaveProcessor extends AbstractProcessor {
 
-
     @Override
     public void process() throws IOException {
 

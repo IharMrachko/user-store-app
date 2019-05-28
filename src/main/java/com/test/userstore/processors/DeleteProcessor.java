@@ -1,6 +1,5 @@
 package com.test.userstore.processors;
 
-import com.test.userstore.exceptions.ValidationException;
 import com.test.userstore.models.User;
 import com.test.userstore.service.UserObjectMapper;
 
@@ -17,7 +16,7 @@ public class DeleteProcessor implements CommandProcessor {
     private final UserObjectMapper filteWriter = new UserObjectMapper();
 
     @Override
-    public void process() throws IOException, ValidationException {
+    public void process() throws IOException {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("INTER USER ID:");
@@ -39,7 +38,6 @@ public class DeleteProcessor implements CommandProcessor {
         if (index != null) {
             users.remove(index.intValue());
         }
-
         Files.write(path, users);
     }
 }

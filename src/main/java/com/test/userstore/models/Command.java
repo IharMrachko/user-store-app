@@ -1,6 +1,5 @@
 package com.test.userstore.models;
 
-import com.test.userstore.exceptions.ValidationException;
 import com.test.userstore.processors.*;
 
 import java.io.IOException;
@@ -33,7 +32,7 @@ public enum Command implements CommandAction {
     },
     DELETE("delete") {
         @Override
-        public void doAction() throws IOException, ValidationException {
+        public void doAction() throws IOException {
             new DeleteProcessor().process();
         }
     },
